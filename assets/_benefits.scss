@@ -1,0 +1,92 @@
+.benefits{
+    .benefits_img{
+        width: 250px;
+    }
+    .benefits_main{
+        margin-top: -250px;
+        // padding: 0 107px;
+        gap: 100px;
+        display: flex;
+        justify-content: center;
+        .benefits_first{
+            width: 550px;
+        }
+        .benefits_text{
+            h1{
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 71px;
+                color: #021112;
+                margin-bottom: 40px;
+            }
+            .benefit_protection{
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                margin-bottom: 30px;
+                .benefit_protection_img{
+                    position: relative;
+                    img{
+                        &:nth-of-type(2){
+                            position: absolute;
+                            left: 10px;
+                            top: 10px;
+                        }
+                    }
+                }
+                .benefit_protection_text{
+                    h3{
+                        font-weight: 600;
+                        font-size: 26px;
+                        line-height: 50px;
+                        color: #021112;
+
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 29px;
+                        color: #677071;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media(max-width:1230px){
+    .benefits{
+        .benefits_main{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media(max-width: 554px){
+    .benefits{
+        .benefits_main{
+            .benefits_first{
+                width: 100%;
+            }
+            .benefits_text{
+                h1{
+                    font-size: 35px;
+                    line-height: 50px;
+                }
+                .benefit_protection{
+                    .benefit_protection_text{
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

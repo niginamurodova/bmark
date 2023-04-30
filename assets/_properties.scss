@@ -1,0 +1,191 @@
+.properties{
+    // padding: 200px 150px;
+    padding-bottom: 170px;
+    .properties_main{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        .properties_logo{
+            padding-top: 200px;
+            width: 1191px;
+            margin: auto;
+            h1{
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 91px;
+                color: #021112;
+                // text-align: left;
+
+            }
+            .properties_header_input{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 98px;
+                form{
+                    display: flex;
+                    align-items: center;
+                    input{
+                        border: 1.3px solid #CCCFD0;
+                        width: 25px;
+                        margin-right: 8px;
+
+                        
+                    }
+                    #properties_check1:focus + label{
+                        color: #021112;
+                    }
+
+                    #properties_check2:focus + label{
+                        color: #021112;
+                    }
+
+                    #properties_check3:focus + label{
+                        color: #021112;
+                    }
+                    label{
+                        margin-right: 44px;
+                        color: #CCCFD0;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 36px;
+
+                        
+                    }
+                    
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 29px;
+                    color: #677071;
+                }
+
+            }
+        }
+        .properties_cards{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            .properties_card{
+                background: #FFFFFF;
+                border-radius: 40px;
+                padding: 29px;
+                transition: all 0.2s;
+                &:hover{
+                    box-shadow: 2px 4px 55px rgba(0, 0, 0, 0.11);
+                    button{
+                        background-color: #13A6BA;
+                        color: white;
+                    }
+                }
+                img{
+                    width: 332px;
+                    margin-bottom: 14px;
+                }
+                h2{
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 49px;
+                    color: #021112;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 29px;
+                    color: #677071;
+
+                }
+                h1{
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 91px;
+                    color: #021112;
+                }
+                .properties_h6{
+                    display: flex;
+                    gap: 28px;
+                    h6{
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 29px;
+                        color: #CCCFD0;
+                        position: relative;
+                        &:after{
+                            height: 60%;
+                            width: 1px;
+                            background-color: #CCCFD0;
+                            content: ' ';
+                            position: absolute;
+                            right: -15px;
+                            top: 6px;
+                        }
+                        &:last-child::after{
+                            display: none;
+                        }
+                    }
+                }
+                button{
+                    margin-top: 55px;
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 52px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 29px;
+                    text-align: center;
+                    color: #13A6BA;
+                    border: 2px solid #13A6BA;
+                    transition: all 0.2s;
+                    background-color: inherit;                    
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1191px){
+    .properties{
+        .properties_main{
+            .properties_logo{
+                width: 100%;
+            }
+            .properties_cards{
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media(max-width:755px){
+    .properties{
+        .properties_main{
+            .properties_logo{
+                text-align: center;
+                .properties_header_input{
+                    flex-direction: column;
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+
+@media(max-width: 400px){
+    .properties{
+        .properties_main{
+            .properties_cards{
+                .properties_card{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            
+        }
+    }
+}

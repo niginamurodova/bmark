@@ -1,0 +1,100 @@
+.email{
+    margin-top: 200px;
+    .email_main{
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+        position: relative;
+        .email_text{
+            h1{
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 70px;
+                color: #021112;
+                margin-bottom: 20px;
+
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 38px;
+                color: #677071;
+
+            }
+        }
+        .email_form{
+            position: relative;
+            form{
+                input{
+                    background-color: #FFFFFF;
+                    border: 1px solid #C8F3F9;
+                    border-radius: 10px;
+                    width: 500px;
+                    height: 60px;
+                    padding: 20px;
+                    
+                }
+                button{
+                    background: #13A6BA;
+                    border-radius: 10px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 29px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    border: 0;
+                    height: 50px;
+                    width: 110px;
+                    margin-left: -115px;
+
+                }
+            }
+            
+        }
+        .email_img{
+            position: absolute;
+            right: 0;
+            bottom: -140px;
+        }
+        
+    }
+}
+
+@media(max-width:1219px){
+    .email{
+        .email_main{
+            flex-direction: column;
+        }
+    }
+}
+
+@media(max-width: 545px){
+    .email{
+        .email_main{
+            .email_form{
+                form{
+                    display: flex; 
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    input{
+                        width: 100%;
+                        margin-right: 10px;
+                    }
+                    button{
+                        width: 110px;
+                        margin-top: 0px;
+                        margin-left: 0;
+                        height: 60px;
+                        
+                    }
+                }
+            }
+            .email_img{
+                bottom: -160px;
+            }
+        }
+    }
+}
